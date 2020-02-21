@@ -1,0 +1,188 @@
+$factor: 87.5%;
+
+$white: scale-color($primary, $lightness: $factor, $saturation: -$factor);
+$gray-100: scale-color($primary, $lightness: $factor/5*4, $saturation: -$factor);
+$gray-200: scale-color($primary, $lightness: $factor/5*3, $saturation: -$factor);
+$gray-300: scale-color($primary, $lightness: $factor/5*2, $saturation: -$factor);
+$gray-400: scale-color($primary, $lightness: $factor/5, $saturation: -$factor);
+$gray-500: scale-color($primary, $lightness: 0%, $saturation: -$factor);
+$gray-600: scale-color($primary, $lightness: -$factor/5, $saturation: -$factor);
+$gray-700: scale-color($primary, $lightness: -$factor/5*2, $saturation: -$factor);
+$gray-800: scale-color($primary, $lightness: -$factor/5*3, $saturation: -$factor);
+$gray-900: scale-color($primary, $lightness: -$factor/5*4, $saturation: -$factor);
+$black: scale-color($primary, $lightness: -$factor, $saturation: -$factor);
+
+$font-size-base: 1.125rem;
+$enable-responsive-font-sizes: true;
+$font-family-sans-serif: 'Raleway', sans-serif;
+$headings-font-family: 'Playfair Display', serif;
+
+@import "bootstrap/scss/bootstrap";
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+hr {
+    @extend .my-5;
+}
+.sy-nav-bar {
+    @extend .navbar, .navbar-dark, .bg-dark, .navbar-expand-sm;
+    .navbar-brand img {
+        height: 32.75px;
+    }
+}
+.sy-jumbotron-home {
+    @extend .jumbotron, .jumbotron-fluid, .bg-primary, .text-light;
+    div {
+        @extend .container;
+    }
+    h1 {
+        @extend .display-3;
+        img {
+            height: 4.5rem;
+        }
+    }
+    p {
+        @extend .lead;
+    }
+}
+.sy-jumbotron-home, .sy-footer {
+    h1, h2, h3, h4, h5, h6, a {
+        @extend .text-white;
+    }
+    a {
+        @extend .font-weight-bold;
+    }
+}
+.sy-jumbotron-home, .sy-jumbotron {
+    @extend .mb-0;
+}
+.sy-footer {
+    @extend .bg-secondary, .py-5, .text-light, .text-center;
+    .wy-logogram {
+        @extend p;
+        height: 32.75px;
+    }
+}
+.sy-jumbotron {
+    @extend .jumbotron, .jumbotron-fluid, .bg-light;
+    div {
+        @extend .container;
+    }
+    h1 {
+        @extend .text-primary;
+    }
+    p {
+        @extend .lead;
+    }
+}
+.sy-content, .sy-alert-primary, .sy-alert-secondary, .sy-alert-success, .sy-alert-danger, .sy-alert-warning, .sy-alert-info, .sy-alert-light, .sy-alert-dark {
+    :first-child {
+        @extend .mt-0;
+    }
+    :last-child {
+        @extend .mb-0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @extend .mt-5, .mb-3;
+    }
+    pre, code {
+        @extend .bg-secondary, .text-light;
+    }
+    pre {
+        @extend .p-3;
+        code {
+            @extend .p-0;
+        }
+    }
+    code {
+        @extend .px-1;
+    }
+    table {
+        @extend .table;
+    }
+}
+.sy-alert-primary {
+    @extend .alert, .alert-primary, .border-primary;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-secondary {
+    @extend .alert, .alert-secondary, .border-secondary;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-success {
+    @extend .alert, .alert-success, .border-success;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-danger {
+    @extend .alert, .alert-danger, .border-danger;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-warning {
+    @extend .alert, .alert-warning, .border-warning;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-info {
+    @extend .alert, .alert-info, .border-info;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-light {
+    @extend .alert, .alert-light, .border-light;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-alert-dark {
+    @extend .alert, .alert-dark, .border-dark;
+    a {
+        @extend .alert-link;
+    }
+}
+.sy-card-link {
+    @extend .btn, .btn-primary, .float-right, .stretched-link, .mt-3;
+}
+.sy-status-bar {
+    @extend .bg-secondary, .text-light, .py-3;
+    div {
+        @extend .container;
+    }
+    a {
+        color: inherit;
+    }
+    a:hover {
+        color: $gray-200;
+        text-decoration: none;
+    }
+}
+.sy-badge-success {
+    @extend .badge, .badge-success, .badge-pill;
+}
+.sy-badge-warning {
+    @extend .badge, .badge-warning, .badge-pill;
+}
+.sy-avatar {
+    @extend .rounded-circle, .mr-3;
+}
+.sy-blockquote {
+    @extend .blockquote, .bg-light, .border-left, .border-secondary, .p-3;
+}
