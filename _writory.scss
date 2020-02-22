@@ -33,6 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 hr {
     @extend .my-5;
 }
+figure {
+    @extend .my-5, .text-center;
+    img {
+        @extend .img-thumbnail;
+    }
+}
+figcaption {
+    @extend small, .pt-3, .text-muted;
+}
 .wy-nav-bar {
     @extend .navbar, .navbar-dark, .bg-dark, .navbar-expand-sm;
     .navbar-brand img {
