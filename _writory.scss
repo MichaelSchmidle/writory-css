@@ -50,9 +50,6 @@ figcaption {
 }
 .wy-jumbotron-home {
     @extend .jumbotron, .jumbotron-fluid, .bg-primary, .text-light;
-    div {
-        @extend .container;
-    }
     h1 {
         @extend .display-3;
         img {
@@ -82,9 +79,6 @@ figcaption {
 }
 .wy-jumbotron {
     @extend .jumbotron, .jumbotron-fluid, .bg-light;
-    div {
-        @extend .container;
-    }
     h1 {
         @extend .text-primary;
     }
