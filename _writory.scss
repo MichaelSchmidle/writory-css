@@ -44,6 +44,9 @@ figcaption {
 }
 .wy-nav-bar {
     @extend .navbar, .navbar-dark, .bg-dark, .navbar-expand-sm;
+    hr {
+        @extend .border-secondary, .my-3;
+    }
     .navbar-brand img {
         height: 32.75px;
     }
@@ -181,6 +184,12 @@ figcaption {
 }
 .wy-badge-warning {
     @extend .badge, .badge-warning, .badge-pill;
+}
+.wy-badge-featured {
+    @extend .badge, .badge-secondary, .position-absolute;
+    left: -0.1rem;
+    top: 1rem;
+    z-index: 100;
 }
 .wy-avatar {
     @extend .rounded-circle, .mr-3;
