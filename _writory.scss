@@ -43,6 +43,19 @@ figure {
 figcaption {
     @extend small, .pt-3, .text-muted;
 }
+blockquote {
+    @extend .blockquote, .display-4, .border-left, .border-light, .p-3, .w-75, .mx-auto, .my-5;
+	footer {
+        font-size: $font-size-base;
+        text-align: right;
+		cite {
+			font-style: normal;
+		}
+		cite::before {
+			content: "—";
+        }
+    }
+}
 .wy-nav-bar {
     @extend .navbar, .navbar-dark, .bg-dark, .navbar-expand-sm;
     hr {
@@ -202,7 +215,4 @@ figcaption {
 }
 .wy-avatar {
     @extend .rounded-circle, .mr-3;
-}
-.wy-blockquote {
-    @extend .blockquote, .bg-light, .border-left, .border-secondary, .p-3;
 }
