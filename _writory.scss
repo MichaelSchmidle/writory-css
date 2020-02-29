@@ -1,6 +1,7 @@
 $factor: 87.5%;
 
 $white: scale-color($primary, $lightness: $factor, $saturation: -$factor);
+$gray-050: scale-color($primary, $lightness: $factor/5*4.5, $saturation: -$factor);
 $gray-100: scale-color($primary, $lightness: $factor/5*4, $saturation: -$factor);
 $gray-200: scale-color($primary, $lightness: $factor/5*3, $saturation: -$factor);
 $gray-300: scale-color($primary, $lightness: $factor/5*2, $saturation: -$factor);
@@ -88,6 +89,13 @@ figcaption {
     }
     p {
         @extend .lead;
+    }
+}
+.wy-toc-nav {
+    @extend .navbar, .navbar-light, .d-md-block, .d-lg-none;
+    background-color: $gray-050;
+    h6 {
+        @extend .mb-0;
     }
 }
 .wy-content, .wy-alert-primary, .wy-alert-secondary, .wy-alert-success, .wy-alert-danger, .wy-alert-warning, .wy-alert-info, .wy-alert-light, .wy-alert-dark {
@@ -188,8 +196,8 @@ figcaption {
 }
 .wy-badge-featured {
     @extend .badge, .badge-secondary, .position-absolute;
-    left: -0.1rem;
-    top: 1rem;
+    left: -0.5rem;
+    top: 0.5rem;
     z-index: 100;
 }
 .wy-avatar {
