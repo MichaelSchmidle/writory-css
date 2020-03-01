@@ -105,7 +105,7 @@ blockquote {
     }
 }
 .wy-toc-nav {
-    @extend .navbar, .navbar-light, .d-md-block, .d-lg-none;
+    @extend .navbar, .navbar-light, .d-md-block, .d-lg-none, .px-0;
     background-color: $gray-050;
     h6 {
         @extend .mb-0;
