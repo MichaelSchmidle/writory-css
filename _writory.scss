@@ -15,8 +15,8 @@ $black: scale-color($primary, $lightness: -$factor, $saturation: -$factor);
 
 $font-size-base: 1.125rem;
 $enable-responsive-font-sizes: true;
-$font-family-sans-serif: 'Raleway', sans-serif;
-$headings-font-family: 'Playfair Display', serif;
+$font-family-sans-serif: 'Raleway', sans-serif !default;
+$headings-font-family: 'Playfair Display', serif !default;
 
 @import "bootstrap/scss/bootstrap";
 
